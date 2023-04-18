@@ -7,7 +7,12 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Bigio.Service\Bigio.Service.csproj" />
+    <Folder Include="Base\" />
+    <Folder Include="Interface\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BigioDomain\BigioDomain.csproj" />
   </ItemGroup>
 
 </Project>

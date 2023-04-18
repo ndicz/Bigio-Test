@@ -1,8 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿    using System;
+    using System.Collections.Generic;
+    using System.Linq;
+    using System.Text;
+    using System.Threading.Tasks;
 
 namespace BigioContract.Models
 {
@@ -13,5 +13,5 @@ namespace BigioContract.Models
         public int id_guru { get; set; }
         public int nilai { get; set; }
 
-    }
-}kjhkjhkjhkjhhjhfg
+    } 
+}

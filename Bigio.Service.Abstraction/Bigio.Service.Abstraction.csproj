@@ -6,8 +6,4 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\Bigio.Service\Bigio.Service.csproj" />
-  </ItemGroup>
-
 </Project>

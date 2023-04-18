@@ -7,7 +7,11 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Bigio.Service\Bigio.Service.csproj" />
+    <PackageReference Include="NLog" Version="5.1.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Bigio.Service.Abstraction\Bigio.Service.Abstraction.csproj" />
   </ItemGroup>
 
 </Project>
