@@ -1,4 +1,6 @@
-﻿using BigioDomain.Base;
+﻿using Bigio.Persistence.RepositoryContext;
+using Bigio.Presistence.Repositories;
+using BigioDomain.Base;
 using BigioDomain.Repositories;
 
 namespace Bigio.Presistence.Base;
@@ -22,16 +24,46 @@ public class RepositoryManager : IRepositoryManager
 
     public INilaiRepository NilaiRepository
     {
+        get;
+        // {
+        //     // if (_nilaiRepository == null)
+        //     // {
+        //     //     _nilaiRepository = new NilaiRepository(_adoContext);
+        //     // }
+        //     // return _nilaiRepository;
+        // }
+    }
+    public IGuruRepository GuruRepository
+    {
+        get;
+        // {
+        //     // if (_guruRepository == null)
+        //     // {
+        //     //     _guruRepository = new GuruRepository(_adoContext);
+        //     // }
+        //     // return _guruRepository;
+        // }
+    }
+    public IAdminRepository AdminRepository
+    {
         get
         {
-            if (_nilaiRepository == null)
+            if (_adminRepository == null)
             {
-                _nilaiRepository = new NilaiRepository(_adoContext);
+                _adminRepository = new AdminRepository(_adoContext);
             }
-            return _nilaiRepository;
+            return _adminRepository;
         }
     }
-    public IGuruRepository GuruRepository { get; }
-    public IAdminRepository AdminRepository { get; }
-    public ISiswaRepository SiswaRepository { get; }
+    public ISiswaRepository SiswaRepository
+    {
+        get
+        {
+            if (_siswaRepository == null)
+            {
+                _siswaRepository = new SiswaRepository(_adoContext);
+            }
+            return _siswaRepository;
+        }
+    }
 }

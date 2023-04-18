@@ -1,4 +1,8 @@
-﻿namespace Bigio.Presistence.Interface;
+﻿
+
+using Bigio.Persistence.RepositoryContext;
+
+namespace Bigio.Presistence.Interface;
 
 public interface IRepositoryBase<T>
 {

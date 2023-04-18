@@ -9,6 +9,13 @@
   <ItemGroup>
     <Folder Include="Base\" />
     <Folder Include="Interface\" />
+    <Folder Include="Reflection\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.5" />
+    <PackageReference Include="System.Linq.Dynamic.Core" Version="1.3.1" />
+
   </ItemGroup>
 
   <ItemGroup>

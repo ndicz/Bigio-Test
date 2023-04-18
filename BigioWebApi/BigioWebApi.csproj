@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
@@ -7,7 +7,15 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Bigio.Presistence\Bigio.Presistence.csproj" />
+    <ProjectReference Include="..\Bigio.Service.Abstraction\Bigio.Service.Abstraction.csproj" />
+    <ProjectReference Include="..\BigioContract\BigioContract.csproj" />
+    <ProjectReference Include="..\BigioDomain\BigioDomain.csproj" />
   </ItemGroup>
 
 </Project>
